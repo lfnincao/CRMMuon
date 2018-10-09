@@ -261,12 +261,17 @@ header {
   background-size: 128px 102px, cover;
 }
 
-header .intro-text {
-  padding-top: 52%;
+.intro-text {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
   text-align: center;
 }
 
-header .intro-text .intro-lead-in {
+.intro-lead-in {
   font-family: "Roboto Medium", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -274,18 +279,23 @@ header .intro-text .intro-lead-in {
   line-height: 28px;
 }
 
-header .grey-color {
+.grey-color {
   background-color: rgb(110, 110, 110, 0.4);
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 @media(min-width:768px) {
-  header .intro-text {
-    padding-top: 22%;
+  .intro-text {
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
     text-align: center;
   }
-  header .intro-text .intro-lead-in {
+  .intro-lead-in {
     margin-left: 125px;
     margin-right: 125px;
     font-family: "Roboto Medium", Helvetica, Arial, sans-serif;
